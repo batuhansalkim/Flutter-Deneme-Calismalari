@@ -27,5 +27,10 @@ class Customer {
   late String name;
   late String lastname;
   late int id;
-  
+}
+
+class Bilgiler {
+  late String isim;
+  late String soyad;
+  late int numara;
 }
