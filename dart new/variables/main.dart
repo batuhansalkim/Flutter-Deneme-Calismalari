@@ -1,8 +1,8 @@
 void main(){
   CustomerManager customerManager = new CustomerManager();
-  Customer customer = new Customer();
-  customer.name = "Batuhan";
-  customer.lastname = "Salkım";
+  Customer customer = new Customer.namedCons("Batuhan","Salkım",1);
+  customer.name = "Derin";
+  customer.lastname = "AKın";
   customer.id = 1;
 
 
@@ -27,10 +27,15 @@ class Customer {
   late String name;
   late String lastname;
   late int id;
+  Customer.namedCons(String name, String lastname, int id ){
+    this.name = name;
+    this.lastname = lastname;
+    this.id = id;
+    print("Sınıf Oluştu...");
+  }
+
+  Customer(){
+
+  }
 }
 
-class Bilgiler {
-  late String isim;
-  late String soyad;
-  late int numara;
-}
